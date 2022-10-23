@@ -1,0 +1,36 @@
+// Catamaran Font
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local("Catamaran-Light"),
+    url("../fonts/Catamaran/Catamaran-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Catamaran-Regular"),
+    url("../fonts/Catamaran/Catamaran-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local("Catamaran-Medium"),
+    url("../fonts/Catamaran/Catamaran-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("Catamaran-Bold"),
+    url("../fonts/Catamaran/Catamaran-Bold.woff") format("woff");
+}
