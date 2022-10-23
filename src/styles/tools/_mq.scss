@@ -132,8 +132,8 @@ $mq-media-type: all !default;
 
 /// Media Query mixin
 ///
-/// @param {String | Boolean} $from [false] - One of $mq-breakpoints
-/// @param {String | Boolean} $until [false] - One of $mq-breakpoints
+/// @param {String | Boolean} $from [true] - One of $mq-breakpoints
+/// @param {String | Boolean} $until [true] - One of $mq-breakpoints
 /// @param {String | Boolean} $and [false] - Additional media query parameters
 /// @param {String} $media-type [$mq-media-type] - Media type: screen, print…
 ///
