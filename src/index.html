@@ -6,10 +6,14 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-XXXXXX-X');
+
   </script>
 
   <meta charset="utf-8">
@@ -20,14 +24,14 @@
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
-  
+
   <!-- Web Application Manifest -->
   <link rel="manifest" href="manifest.json">
-  
+
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="application-name" content="MarkItAsDone">
-  
+
   <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -38,11 +42,11 @@
   <link rel="manifest" href="site.webmanifest?v=1.0.0">
   <link rel="mask-icon" href="safari-pinned-tab.svg?v=1.0.0" color="#3c3ce5">
   <link rel="shortcut icon" href="favicon.ico?v=1.0.0">
-  
+
   <!-- Tile icon for Win8 (144x144 + tile color) -->
   <meta name="msapplication-TileImage" content="mstile-150x150.png">
   <meta name="msapplication-TileColor" content="#3c3ce5">
-  
+
   <!-- Color the status bar on mobile devices -->
   <meta name="theme-color" content="#ffffff">
 
@@ -55,7 +59,65 @@
 </head>
 
 <body>
-  <h1>Hi, FROM HTML STARTER KIT</h1>
+  <!-- Start Header -->
+  <div class="header font-Catamaran">
+    <div class="container">
+
+      <div class="menu">
+        <div class="menu__logo">
+          <img src="/images/logo.svg" alt="logo">
+        </div>
+
+        <div class="menu__nav">
+          <div class="icon-close">
+            <span></span>
+            <span></span>
+          </div>
+
+          <ul class="u-flex">
+            <li><a href="#"> why us </a></li>
+            <li><a href="#"> menu </a></li>
+            <li><a href="#"> popular dishes </a></li>
+            <li><a href="#"> Book </a></li>
+            <li><a href="#"> contact </a></li>
+          </ul>
+        </div>
+
+        <div class="icon-humburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="banner">
+        <div class="banner__title font-RobotoSlab">
+          Book a table in the best
+          Mexican restaturant
+        </div>
+        <div class="banner__subTitle">
+          30% off for the Christmas
+        </div>
+
+        <div class="u-flex button">
+          <div class="button__order">
+            Book Now
+          </div>
+          <div class="button__menu">
+            See Menu
+          </div>
+        </div>
+
+        <div class="arrow-icon">
+          <img src="/images/arrow.svg" alt="arrow">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- End Header -->
+
   <!-- build:js scripts/vendor.min.js -->
   <!-- endbuild -->
 
