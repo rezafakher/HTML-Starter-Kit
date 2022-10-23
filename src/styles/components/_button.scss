@@ -1,0 +1,39 @@
+.button__order {
+  @extend .u-flex,
+  .u-flex--center;
+
+  background: var(--primary);
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  width: 193px;
+  height: 51px;
+  color: white;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.button__menu {
+  @extend .u-flex,
+  .u-flex--center;
+
+  background: #404040;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  width: 193px;
+  height: 51px;
+  color: white;
+  margin-left: 40px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+
+  @include mq($until:lg) {
+    margin-left: 20px;
+  }
+
+  @include mq($until:md) {
+    margin-left: 0px;
+    margin-bottom: 16px;
+  }
+}
