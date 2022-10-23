@@ -1,0 +1,14 @@
+.container {
+    max-width: 1208px;
+    margin: auto;
+
+    @include mq($until:lg){
+        max-width: 768px;
+        padding: 0 34px;
+    }
+
+    @include mq($until:md){
+        max-width: 100%;
+        padding: 0;
+    }
+}
