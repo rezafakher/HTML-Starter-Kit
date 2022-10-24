@@ -1,0 +1,115 @@
+.dishes {
+  background-color: var(--brown-dark);
+  border: 1px solid #8D8D8D;
+  padding: 90px;
+  margin-bottom: 64px;
+
+  @include mq($until:lg) {
+    padding: 40px;
+  }
+
+  @include mq($until:mobile) {
+    padding: 25px;
+    margin-bottom: 48px;
+  }
+
+  .dishes__header {
+    justify-content: space-between;
+
+    @include mq($until:lg) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+  }
+
+  .dishes__slider {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    display: grid;
+    grid-gap: 1rem;
+    margin-top: 76px;
+
+    .dishes__slider__col1 {
+      grid-column: span 7 / span 7;
+
+      @include mq($until:lg) {
+        grid-column: span 12 / span 12;
+      }
+    }
+
+    .dishes__slider__col2 {
+      grid-column: span 5 / span 5;
+
+      @include mq($until:lg) {
+        grid-column: span 12 / span 12;
+      }
+    }
+
+    img {
+      width: 584px;
+      max-width: 100%;
+
+      @include mq($until:lg) {
+        width: 619px;
+      }
+    
+      @include mq($until:mobile) {
+        width: 329px;
+      }
+    }
+
+    .dishes__content {
+      @include mq($until:mobile) {
+        text-align: center;
+      }
+      h4 {
+        font-size: 32px;
+        line-height: 42px;
+        display: flex;
+        align-items: flex-end;
+        color: #FFFFFF;
+        font-family: 'RobotoSlab';
+
+        @include mq($until:lg) {
+          font-size: 34px;
+        }
+      
+        @include mq($until:mobile) {
+          font-size: 30px;
+        }
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 130%;
+        color: var(--gray-light);
+        margin-top: 24px;
+        margin-bottom: 24px;
+
+        @include mq($until:lg) {
+          font-size: 24px;
+        }
+      
+        @include mq($until:mobile) {
+          font-size: 22px;
+        }
+      }
+
+      span {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 130%;
+        color: #FFFCFC;
+
+        @include mq($until:lg) {
+          font-size: 30px;
+        }
+      
+        @include mq($until:mobile) {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
