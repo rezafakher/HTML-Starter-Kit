@@ -1,0 +1,34 @@
+.title-primary {
+  font-family: 'RobotoSlab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  color: #FFFFFF;
+  position: relative;
+
+  @include mq($until:md) {
+    font-size: 34px;
+    line-height: 45px;
+    width: 100%;
+    text-align: center;
+  }
+
+  @include mq($until:mobile) {
+    max-width: 312px;
+  }
+
+  span {
+    width: 44px;
+    height: 4px;
+    background-color: var(--primary);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+
+    @include mq($until:md) {
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
