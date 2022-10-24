@@ -1,0 +1,70 @@
+.stories {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: grid;
+  grid-gap: 1rem;
+  background-color: var(--brown-dark);
+  margin-top: 96px;
+  margin-bottom: 128px;
+  border: 1px solid #8D8D8D;
+  height: 555px;
+
+  @include mq($until:lg) {
+    height: 950px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  @include mq($until:mobile) {
+    margin-top: 0;
+    height: auto;
+    padding-bottom: 64px;
+    margin-bottom: 48px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--gray-light);
+    margin-top: 60px;
+
+    @include mq($until:mobile) {
+      text-align: center;
+      font-size: 22px;
+    }
+  }
+
+  .stories-content {
+    padding: 0 50px 64px 64px;
+    align-items: flex-start;
+
+    @include mq($until:lg) {
+      align-items: center;
+      padding: 60px 40px 40px 40px;
+    }
+
+    @include mq($until:mobile) {
+      align-items: center;
+      padding: 60px 25px 40px 25px;
+    }
+  }
+
+  img {
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+
+    @include mq($until:lg) {
+      margin-top: 0;
+      max-width: 460px;
+    }
+
+    @include mq($until:md) {
+      max-width: 365px;
+    }
+
+    @include mq($until:mobile) {
+      max-width: 310px;
+    }
+  }
+}
