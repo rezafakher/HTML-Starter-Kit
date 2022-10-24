@@ -7,7 +7,7 @@
   color: #FFFFFF;
   position: relative;
 
-  @include mq($until:md) {
+  @include mq($until:lg) {
     font-size: 34px;
     line-height: 45px;
     width: 100%;
@@ -26,7 +26,7 @@
     bottom: -8px;
     left: 0;
 
-    @include mq($until:md) {
+    @include mq($until:lg) {
       left: 50%;
       transform: translate(-50%, -50%);
     }
