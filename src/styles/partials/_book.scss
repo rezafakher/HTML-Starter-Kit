@@ -14,11 +14,12 @@
 
   .book__content {
     width: 376px;
-    padding-left: 5%;
+    padding-left: 9%;
 
-    @include mq($until:md){
+    @include mq($until:lg){
       width: auto;
       padding-left: 0;
+      max-width: 376px;
     }
 
     p {
