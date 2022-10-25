@@ -3,6 +3,7 @@
   border: 1px solid #8D8D8D;
   padding: 90px;
   margin-bottom: 184px;
+  color: var(--gray-light);
 
   @include mq($until:lg) {
     padding: 40px;
@@ -112,4 +113,27 @@
       }
     }
   }
+
+  .carousel {
+    color: white;
+  }
+  
+  .carousel-cell {
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  .button--previous,
+  .button--next {
+    cursor: pointer;
+  }
+
+  .number--slide {
+    margin: 0 32px;
+  }
+
+  .number--activeSlide {
+    color: var(--primary-light);
+  }
+  
 }
