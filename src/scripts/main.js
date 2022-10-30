@@ -20,16 +20,36 @@
       pageDots: false
     });
 
+    var flickity_slider = document.querySelector('.flickity-slider').childNodes.length;
+    document.querySelector('.number--slide span').append(flickity_slider);
+
+    let input = document.querySelector('.input__number');
+    let step = 1;
+    let max = flickity_slider + 1;
+    let min = 0;
+
     document.querySelector('.button--next').addEventListener('click', function () {
       flkty.next();
+
+      let input_change = parseInt(input.value) + step;
+      if (input_change === max) {
+        return false;
+      } else {
+        input.value = input_change
+      }
+
     });
 
     document.querySelector('.button--previous').addEventListener('click', function () {
       flkty.previous();
-    });
 
-    var flickity_slider = document.querySelector('.flickity-slider').childNodes.length;
-    document.querySelector('.number--Allslide').append(flickity_slider);
+      let input_change = parseInt(input.value) - step;
+      if (input_change === min) {
+        return false;
+      } else {
+        input.value = input_change
+      }
+    });
 
   });
 })();
