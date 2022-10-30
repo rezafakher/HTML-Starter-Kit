@@ -53,3 +53,20 @@
 
   });
 })();
+
+
+function openMenu(evt, menuName) {
+  var i, menus_body, tablinks;
+  menus_body = document.getElementsByClassName("menus-body");
+  for (i = 0; i < menus_body.length; i++) {
+    menus_body[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();

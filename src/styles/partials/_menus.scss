@@ -39,6 +39,16 @@
 
       li {
         margin-left: 48px;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        line-height: 130%;
+        text-transform: uppercase;
+        border-bottom: 1px dashed #FFFFFF;
+        cursor: pointer;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 5px;
 
         &:first-child {
           margin-left: 0;
@@ -47,32 +57,21 @@
         @include mq($until:md) {
           margin-left: 0;
           margin-bottom: 28px;
+          font-weight: 400;
+          line-height: 43px;
+          letter-spacing: 0.02em;
         }
+      }
 
-        a {
-          text-decoration: none;
-          color: white;
-          font-size: 20px;
-          line-height: 130%;
-          text-transform: uppercase;
-          border-bottom: 1px dashed #FFFFFF;
-
-          &:focus {
-            color: var(--primary-light);
-          }
-
-          @include mq($until:lg) {
-            font-weight: 400;
-            line-height: 43px;
-            letter-spacing: 0.02em;
-          }
-        }
+      li.active {
+        color: var(--primary-light);
       }
     }
   }
 
   .menus-body {
     margin-top: 76px;
+    display: none;
 
     .menus-item {
       justify-content: space-between;
@@ -136,4 +135,5 @@
       }
     }
   }
+
 }

@@ -54,7 +54,7 @@
       @include mq($until:lg) {
         width: 619px;
       }
-    
+
       @include mq($until:mobile) {
         width: 329px;
       }
@@ -64,6 +64,7 @@
       @include mq($until:mobile) {
         text-align: center;
       }
+
       h4 {
         font-size: 32px;
         line-height: 42px;
@@ -75,7 +76,7 @@
         @include mq($until:lg) {
           font-size: 34px;
         }
-      
+
         @include mq($until:mobile) {
           font-size: 30px;
         }
@@ -91,7 +92,7 @@
         @include mq($until:lg) {
           font-size: 24px;
         }
-      
+
         @include mq($until:mobile) {
           font-size: 22px;
         }
@@ -106,7 +107,7 @@
         @include mq($until:lg) {
           font-size: 30px;
         }
-      
+
         @include mq($until:mobile) {
           font-size: 22px;
         }
@@ -117,7 +118,7 @@
   .carousel {
     color: white;
   }
-  
+
   .carousel-cell {
     width: 100%;
     margin-right: 10px;
@@ -138,5 +139,4 @@
     width: .5rem;
     color: var(--primary-light);
   }
-  
 }
